@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <!--h1+table>tr*3>td*2-->
+    <h1>Free Information Form</h1>
+
+    <form action="/registerUser" method="get">
+    <table>
+        <tr>
+            <td>
+                <label for="Name"><b>Your Name</b></label>
+            </td>
+            <td>
+                <input type="text" id="userName" name="userName">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="userPass"><b>Password</b></label>
+            </td>
+            <td>
+                <input type="password" id="userPass" name="userPass" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="genderM"><b>Select Gender</b></label>
+            </td>
+            <td>
+                Female <input type="radio" id="genderF" name="gender" value="F">
+                Male <input type="radio" id="genderM" name="gender">
+                Other <input type="radio" id="genderO" name="gender">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="country"><b>Country</b></label>
+            </td>
+            <td>
+                <select id="country" name="country">
+                <option value="">-- Select your Country</option>
+                <option value="">Spain</option>
+                <option value="">USA</option>
+                <option value="">UK</option>
+                <option value="">France</option>
+                <option value="">Phillipines</option>
+                <option value="">Austria</option>
+            </select>
+            </td>            
+        </tr>
+        <tr>
+            <td>
+                <b>Your Hobbies</b>
+            </td>
+            <td>
+                <input type= "checkbox" id="hobby1" name="hobby1"> Movies<br>
+                <input type= "checkbox" id="hobby2" name="hobby2"> Netflix<br>
+                <input type= "checkbox" id="hobby3" name="hobby3"> Sports<br>
+                <input type= "checkbox" id="hobby4" name="hobby4"> Art
+            </td>
+        <tr>
+            <td>
+                Comments
+            </td>
+            <td>
+                <textarea id="comments" name="comments">Write here...</textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+               <input type="checkbox" id="accept" name="accept" value="ok" required=*required>
+                I accept the Conditions
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="Submit" value="Register">
+            </td>
+        </tr>
+       
+            
+    </table>
+</form>
+</body>
+</html>
